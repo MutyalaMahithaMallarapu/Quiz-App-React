@@ -1,3 +1,29 @@
+This is a React Quiz App built using React.
+
+Here is the React Quiz Application Overview 
+This is the Home Page
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/55961879-24ca-473b-8bab-abecf4a73ec7)
+
+After clicking on Start we will be navigated to the Quiz questions screen and each page is having single question
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/5678bb58-a1e8-430e-ad99-a0dbc51c4347)
+
+if we didn't selected any option then we will get a alert message to select any option
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/fef63979-73be-4bde-85f5-8774f91b4583)
+
+
+after selecting the answers for all the questions we have alert popup saying "You have Reached the end of the Quiz, click Ok to view Score"
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/cbdfc1bc-40ca-431c-9cbe-31e0cb49a9e7)
+
+After clicking on Ok we will get the Result page
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/a419909c-31f0-4f80-8cd4-cfc864f2c796)
+
+if we click on Try Again again it will be redirected to Home Page
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
