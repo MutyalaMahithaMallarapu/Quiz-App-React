@@ -24,6 +24,23 @@
            "Component-Based Architecture",
            "One-Way Data Binding"],
           "answer": "Two-Way Data Binding"
-          }
+          },
+          {
+            "question": "Which lifecycle method is used for cleanup in React functional components?",
+            "options": ["componentWillUnmount",
+           "useEffect",
+             "componentDidMount",
+             "componentWillUpdate"],
+            "answer": "useEffect"
+            },
+            {
+              "question": "What is the purpose of the useState hook in React?",
+              "options": [" To fetch data from an API",
+             "To manage state in functional components",
+               "To create reusable components",
+               "To handle routing in React applications"],
+              "answer": "To manage state in functional components"
+              }
+            
     ]
 }
