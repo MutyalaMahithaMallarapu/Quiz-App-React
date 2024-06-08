@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import './QuizPage.css';
+import '../../styleSheet/StyleSheet.css';
 import data from '../../../data/quizData.json'
+import { useNavigate } from 'react-router-dom';
 
 const QuizPage = () => {
 
     const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0)
-
+    const [score, setScore] = useState(0)
+    const [reachedMaxQuestions, setReachedMaxQuestions] = useState(false)
+    const navigate = useNavigate();
     console.log(currentQuestionNumber, data.quizData.length)
     const handleOnClickNext = () => {
         if (currentQuestionNumber <= data?.quizData?.length - 2) {
             setCurrentQuestionNumber(currentQuestionNumber + 1)
         }
         else {
-            alert(" you have reached end of the question ")
+            setReachedMaxQuestions(true)
+            alert(" You have Reached the end of the Quiz, click Ok to view Score ")
         }
     }
 
@@ -22,10 +26,23 @@ const QuizPage = () => {
         }
     }
 
+   const handleOnClickTryAgain = () => {
+    navigate('/');
+   }
+
+    const handleOptionChange = (event) => {
+        console.log(event.target.value)
+        if(event.target.value === data?.quizData[currentQuestionNumber]?.answer ){
+            setScore(score + 1)
+        }
+    }
+
     return (
         <div className="quizStyle">
             <div className="quizBlock">
                 <h1 className="header"> React Quiz </h1>
+
+                {!reachedMaxQuestions ? (
                 <div className="questionBlock">
                     <div className="question">
                         {currentQuestionNumber + 1}. {data?.quizData[currentQuestionNumber]?.question}
@@ -34,8 +51,8 @@ const QuizPage = () => {
                         {data && data?.quizData[currentQuestionNumber]?.options.map((item) => {
                             return (
                                 <div className="radioOptions">
-                                    <input type="radio" name="radio" value="item" key="item" />
-                                    {item}
+                                    <input type="radio" name="radio" value={item} key={item} onChange={handleOptionChange}/>
+                                     {item}
                                 </div>
                             )
                         })
@@ -47,6 +64,16 @@ const QuizPage = () => {
                     </div>
 
                 </div>
+                ) : (
+                    <div className="results">
+                       <div className="score"> <b>Total Score : {score}</b> </div>
+                        <div className="score"><b> Total Questions : {data?.quizData?.length} </b></div>
+                        <div className="btnStyle">
+                        <button className="tryAgainBtn" onClick={handleOnClickTryAgain}> <b> Try Again </b></button>
+                    </div>
+                    </div>
+                )
+            }
             </div>
         </div>
     )
