@@ -7,7 +7,7 @@ This is the Home Page
 After clicking on Start we will be navigated to the Quiz questions screen and each page is having single question
 ![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/5678bb58-a1e8-430e-ad99-a0dbc51c4347)
 
-if we didn't selected any option then we will get a alert message to select any option
+if we didn't selected any option and click on next button then we will get a alert message to select any option
 ![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/fef63979-73be-4bde-85f5-8774f91b4583)
 
 
