@@ -1,0 +1,29 @@
+{
+    "quizData": [
+      {
+       "question": "Which of the following is used in React.js to increase performance?",
+       "options":[   "Virtual Dom",
+       "Original Dom",
+      "Both A and B",
+       "None of the above"],
+       "answer": "Virtual Dom"
+       },
+       {
+        "question": "What is JSX in React.js?",
+        "options": [ " JavaScript Extension",
+        "JavaScript XML",
+        "JavaScript XHR",
+        "JavaScript Syntax"
+      ],
+        "answer": "JavaScript XML"
+        },
+        {
+          "question": "Which of the following is NOT a key feature of React.js?",
+          "options": ["Virtual DOM",
+         "Two-Way Data Binding",
+           "Component-Based Architecture",
+           "One-Way Data Binding"],
+          "answer": "Two-Way Data Binding"
+          }
+    ]
+}
