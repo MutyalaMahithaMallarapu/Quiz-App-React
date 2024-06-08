@@ -12,9 +12,9 @@ const HomePage = () => {
         <div className="quizStyle">
             <div className="quizBlock">
                 <div className="homeStyle">
-                    <h1> Engage, learn, and challenge </h1>
-                    <h1> with our interactive React quiz app!</h1> <br />
-                    <h3> Click on the below start button to start the Quiz </h3>
+                    <h1 className="headerHome"> Engage, learn, and challenge </h1>
+                    <h1 className="headerHome"> with our interactive React quiz app!</h1>
+                    {/* <h3> Click on the below start button to start the Quiz </h3> */}
                     <button className="tryAgainBtn" onClick={handleOnClickStart}> <b> Start </b></button>
                 </div>
                 {/* <QuizPage /> */}

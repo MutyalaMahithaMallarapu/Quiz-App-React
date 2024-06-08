@@ -20,6 +20,11 @@
   font-size: xx-large;
 }
 
+.headerHome{
+    font-size: xx-large;
+    margin: 10px !important;
+}
+
 .question{
    font-size: x-large;
    margin: 5px;
@@ -57,6 +62,7 @@
     width: 150px;
     font-size: larger;
     border-radius: 10px;
+    margin-top: 40px;
 }
 .tryAgainBtn:hover {
     background-color: rgba(255, 255, 255, 0.765);
@@ -85,8 +91,14 @@
 }
 
 .homeStyle{
-    text-align: center;
-    margin-top: 70px;
+    /* text-align: center; */
+    /* margin-top: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+
 }
 
 input[type="radio"] {
