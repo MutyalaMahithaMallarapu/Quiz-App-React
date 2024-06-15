@@ -9,6 +9,7 @@ const QuizPage = () => {
     const [score, setScore] = useState(0)
     const [userSelected, setUserSelected] = useState(false)
     const [reachedMaxQuestions, setReachedMaxQuestions] = useState(false)
+    const [isReviewPage, setIsReviewPage] = useState(false)
     const navigate = useNavigate();
     console.log(currentQuestionNumber, data.quizData.length)
     const handleOnClickNext = () => {
@@ -48,10 +49,14 @@ const QuizPage = () => {
 
     }
 
+    const handleOnClickReview = () => {
+        setIsReviewPage(true)
+    }
+
     return (
         <div className="quizStyle">
             <div className="quizBlock">
-                <h1 className="header"> React Quiz </h1>
+                {isReviewPage ? <h1 className="header"> Review all the questions </h1> : <h1 className="header"> React Quiz </h1>}
 
                 {!reachedMaxQuestions ? (
                     <div className="questionBlock">
@@ -75,16 +80,35 @@ const QuizPage = () => {
                         </div>
 
                     </div>
-                ) : (
+                ) : (!isReviewPage ? (
                     <div className="results">
                         <div className="score"> <b>Total Score : {score}</b> </div>
                         <div className="score"><b> Total Questions : {data?.quizData?.length} </b></div>
                         <div className="btnStyle">
+                            <button className="tryAgainBtn" onClick={handleOnClickReview}> <b> Review </b></button>
+                            <button className="tryAgainBtn" onClick={handleOnClickTryAgain}> <b> Try Again </b></button>
+                        </div>
+                    </div>) : (
+                <div> 
+                    <div className="reviewPage">
+                        {data?.quizData.map((item, i) => {
+                            return (
+                                <div className="review">
+                                    {i + 1}. {item?.question}
+                                    <div> Ans. {item?.answer} </div>
+                                    <br />
+                                </div>
+                            )
+                        })
+                        }
+                        
+                    </div>
+                    <div className="btnReviewStyle">
                             <button className="tryAgainBtn" onClick={handleOnClickTryAgain}> <b> Try Again </b></button>
                         </div>
                     </div>
                 )
-                }
+                )}
             </div>
         </div>
     )
