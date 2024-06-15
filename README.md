@@ -19,6 +19,10 @@ After clicking on Ok we will get the Result page
 
 if we click on Try Again again it will be redirected to Home Page
 
+or if we click on Review Page we can see the answers of all the questions
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/15f473e3-d7e0-4ce3-89f5-bddf73e83034)
+
+
 
 
 
