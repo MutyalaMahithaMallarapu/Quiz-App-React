@@ -15,11 +15,11 @@ after selecting the answers for all the questions we have alert popup saying "Yo
 ![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/cbdfc1bc-40ca-431c-9cbe-31e0cb49a9e7)
 
 After clicking on Ok we will get the Result page
-![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/a419909c-31f0-4f80-8cd4-cfc864f2c796)
+![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/905164b9-048f-49dc-aa6c-469790541c4d)
 
 if we click on Try Again again it will be redirected to Home Page
-
-or if we click on Review Page we can see the answers of all the questions
+or
+if we click on Review Page we can see the answers of all the questions
 ![image](https://github.com/MutyalaMahithaMallarapu/Quiz-App-React/assets/167528557/15f473e3-d7e0-4ce3-89f5-bddf73e83034)
 
 
